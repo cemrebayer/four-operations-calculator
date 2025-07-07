@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>4 İşlem Hesap Makinesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <script src="toplama.js"></script>
+  <div class="container">
+    <h2>🧮 4 İşlem Makinesi</h2>
+
+    <label for="number1">Birinci Sayı:</label>
+    <input type="number" id="number1" required>
+
+    <label for="number2">İkinci Sayı:</label>
+    <input type="number" id="number2" required>
+
+    <label for="operation">İşlem Seçin:</label>
+    <select id="operation">
+      <option value="toplama">Toplama</option>
+      <option value="cıkarma">Çıkarma</option>
+      <option value="carpma">Çarpma</option>
+      <option value="bolme">Bölme</option>
+    </select>
+
+    <button onclick="dortIslem()">Hesapla</button>
+
+    <span id="sonuc"></span>
+  </div>
+
+</body>
+</html>
